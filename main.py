@@ -96,15 +96,13 @@ with st.sidebar:
     if st.button("Clear Chat History"):
         initialize_session()
 
-# Main content
-load_dotenv()
+load_dotenv()  # Make sure this is called earlier in your script
 
-# Ensure the Groq API key is set
-groq_api_key = "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"
+groq_api_key = os.getenv("GROQ_API_KEY")
 if not groq_api_key:
     st.error("❌ Groq API Key is missing! Set it in your .env file or environment variables.")
     st.stop()
-
+    
 # Main content area
 col1, col2, col3 = st.columns([1, 2, 1])
 with col2:
