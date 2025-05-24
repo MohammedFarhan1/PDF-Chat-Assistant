@@ -1,0 +1,12 @@
+streamlit
+langchain>=0.1.14
+langchain-community>=0.0.34
+langchain-core>=0.1.33
+langchain-huggingface>=0.0.5
+langchain-groq>=0.0.2
+huggingface-hub
+faiss-cpu
+pypdf
+python-dotenv
+tqdm
+asyncio
